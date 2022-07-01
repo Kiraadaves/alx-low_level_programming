@@ -10,7 +10,7 @@ int main(void)
 
 	for (ch = 0; ch > 10; ch++)
 	{
-		putchar(ch);
+		printf("%i", ch);
 	}
 		putchar('\n');
 	return (0);
