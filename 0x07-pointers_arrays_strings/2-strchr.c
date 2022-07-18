@@ -1,21 +1,23 @@
 #include "main.h"
-#include <stddef.h>
+
 /**
- * _strchr - locates an xter in a string
- * @s: the string
- * @c: the character
+ * strchr - returns pointer to the first occurence of c in strings
  *
- * Return: a pointer to the xter found
+ * @c: character whose first occurence is to be found
+ * @s: string to be searched for character c
  */
 
 char *_strchr(char *s, char c)
 {
 	int i;
+	char *n;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; *s++ == 0; i++)
 	{
-		if (s[i] == c)
-		return (&s[i]);
+		if (*s++ == c)
+			n = s + c;
+		else
+			n = s + '\0';
 	}
-	return (0);
+	return (n);
 }
