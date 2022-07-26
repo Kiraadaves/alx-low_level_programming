@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	chat *strout;
+	char *strout;
 	unsigned int i, j, k, limit;
 
 	if (s1 == NULL)
