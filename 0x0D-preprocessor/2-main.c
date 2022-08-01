@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints file it was compiled from using a predefined macro
- * Return - 0
+ * Return: 0
  */
 
 int main(void)
